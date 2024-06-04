@@ -16,16 +16,18 @@
         <section class="menu">
             <a class="nav-item" href="#home">Home</a>
             <a class="nav-item" href="#facility">Our Facilities</a>
+            <a class="nav-item" href="#gallery">Our Gallery</a>
             <a class="nav-item" href="#message-us">Message Us</a>
         </section>
     </nav>
 
-    <hr style="border-width: 0px; margin: 0px">
+    <hr style="border-width: 1px; margin: 0px">
 
     <section class="section-container">
 
         <!--Home-->
-        <section class="home" style="background-image: url(asset/home.png);">
+        <!-- style="background-image: url(asset/home.png); -->
+        <section class="home">
             <header>
             <br>
             <h1>Hi <span id="name">-</span>! Welcome to Cake Crafter Academy</h1>
@@ -36,7 +38,11 @@
                 <br>
                 <p>Embark on a delectable journey of baking mastery with us at <span>Cake Crafters Academy</span>,<br>
                     where we blend expertise and inspiration to hone your cake-making skills</p>
+
             </article>
+            <div class="banner">
+                <img src=".//asset/banner.png" alt="banner image" width="100%"/>
+            </div>
         </section>
 
         <hr style="border-width: 0px; margin: 0px">
@@ -67,7 +73,57 @@
 
         </section>
 
-        <hr>
+        <hr style="border-width: 1px; margin: 0px">
+
+        <!--Gallery-->
+        <section id="gallery">
+            <header>
+                <h1>Our Gallery</h1>
+            </header>
+          <div class="gallery-name">
+            <p>Here is some documentation from our program and class</p>
+          <div class="photo-gallery">
+            <img
+            class="img-slideshow"
+            src="./asset/gallery1.png" width="100%"/>
+            <img
+            class="img-slideshow"
+            src="./asset/gallery2.png" width="100%"/>
+            <img
+            class="img-slideshow"
+            src="./asset/gallery3.png" width="100%"/>
+            <!-- <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button> -->
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+                var i;
+                var imgList = document.getElementsByClassName("img-slideshow");
+                if (n > imgList.length) slideIndex = 1;
+                else if (n < 1) slideIndex = imgList.length;
+
+                for (i = 0; i < imgList.length; i++) {
+                    imgList[i].style.display = "none";
+                }
+                imgList[slideIndex - 1].style.display = 'block';
+            }
+            setInterval(() => {
+                plusDivs(1);
+            }, 1000);
+          </script>
+          </div>
+
+        </section>
+
+        <hr style="border-width: 1px; margin: 0px">
 
         <!--Message us-->
         <section id="message-us">
@@ -139,7 +195,7 @@
 
     <footer class="footer">
         <br>
-        <p>@Cake Crafters Academy</p>
+        <p>©Cake Crafters Academy</p>
     </footer>
 
 </body>

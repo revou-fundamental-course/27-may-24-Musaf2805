@@ -32,3 +32,5 @@ function setSenderUI(name, birthDate, gender, messages) {
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-messages").innerHTML = messages;
 }
+
+
