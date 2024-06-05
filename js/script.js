@@ -1,7 +1,7 @@
 // Ini Javascript//
 
 function replaceName () {
-    let name = prompt("Siapakah nama anda?", "");
+    let name = prompt("Selamat datang di website kami! Mohon isi nama anda :)", "");
     document.getElementById("name").innerHTML = name
 }
 
