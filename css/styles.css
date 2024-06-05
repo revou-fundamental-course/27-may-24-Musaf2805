@@ -78,7 +78,7 @@ nav {
     display: flex;
 }
 
-/* Pengaturan tampilan device - header */
+/* Pengaturan tampilan device - header max width 600px */
 @media only screen and (max-width: 600px){
 .header-wrapper {
     flex-direction: column;
@@ -127,7 +127,7 @@ nav {
     background-repeat: no-repeat;
 }
 
-/*Pengaturan tampilan facility*/
+/*Pengaturan tampilan facility max-width 700px*/
 @media only screen and (max-width: 700px){
     .facility-list{
         flex-direction: column;
@@ -208,7 +208,7 @@ section.form input#btn-submit{
     font-size: 14px;
 }
 
-/*Pengaturan tampilan form*/
+/*Pengaturan tampilan form max-width 500px*/
 @media only screen and (max-width: 500px){
     .form .table-row{
         width: 300px;
@@ -228,7 +228,7 @@ section.form input#btn-submit{
     }
 }
 
-/*Pengaturan tampilan form*/
+/*Pengaturan tampilan form max-wisth 395px*/
 @media only screen and (max-width: 395px){
     .form .table-row{
         width: 250px;
@@ -249,7 +249,7 @@ section.form input#btn-submit{
 }
 
 
-/* Pengaturan tampilan result-container */
+/* Pengaturan tampilan result-container max-width: 800px */
 @media only screen and (max-width: 800px){
     .message-us-section {
         flex-direction: column;
@@ -268,7 +268,7 @@ section.form input#btn-submit{
     }
 }
 
-/* Pengaturan tampilan result-container */
+/* Pengaturan tampilan result-container max-width 500px */
 @media only screen and (max-width: 500px){
     .message-us-section {
         flex-direction: column;
@@ -287,7 +287,7 @@ section.form input#btn-submit{
     }
 }
 
-/* Pengaturan tampilan result-container */
+/* Pengaturan tampilan result-container max-width 395px */
 @media only screen and (max-width: 395px){
     .message-us-section {
         flex-direction: column;
@@ -301,6 +301,7 @@ section.form input#btn-submit{
     }
 }
 
+/* footer */
 .footer {
     height: 50px;
     background-color: #9B4819;
