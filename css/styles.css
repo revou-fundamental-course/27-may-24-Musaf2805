@@ -177,7 +177,7 @@ section.form table .table-row{
     font-family: Arial, Helvetica, sans-serif;
 }
 section.form table .table-row td.label{
-    width: 90px;
+    width: 200px;
 }
 section.form table .table-row td.input-table{
     margin-left: 5px;
@@ -218,8 +218,8 @@ section.form input#btn-submit{
         width: 280px;
         font-size: 80%;
     }
-    .label{
-        width: 100px;
+    section.form table .table-row td.label{
+        width: 50px;
     }
     .input-text{
         font-size: 80%;
